@@ -1,0 +1,307 @@
+:root{
+    --bluesoft : #f9fbfc
+    --purple : #7f04d1
+    --softpurple : #e5e4ff
+    --navy : #101041
+    --darkgrey : #949293
+    --darkgrey2 : #e7ebed
+    --grey : #dfe2e7
+    --purple2 : #6261db
+    --green : #316762
+    --white : #ffffff
+    --fwbold : 700
+    --fwsemibold : 600
+    --fwextra : 800
+    --fwregular : 400
+    --fwlight : 300
+    --fwsmedium : 500
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.big-header{
+    font-size: 48px;
+    font-weight: 800;
+    color: #101041;
+    margin: 0;
+}
+.medium-header{
+    font-size: 28px;
+    font-weight: 700;
+    color: #101041;
+    margin: 0;
+}
+.small-header{
+    font-size: 22px;
+    font-weight: 700;
+    color: #101041;
+    margin: 0;
+}
+.primary-copy{
+    font-size: 16px;
+    font-weight: 400;
+    color: #949293;
+    margin: 0;
+}
+
+.btn-primary{
+    padding: 12px 20px 12px 20px;
+    background:  #7f04d1;
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    border: none;
+}
+.btn-primary:hover{
+    padding: 12px 20px 12px 20px;
+    background:  #6261db;
+    color: #ffffff !important;
+    
+}
+.btn-secondary{
+    padding: 12px 20px 12px 20px;
+    background:  #dfe2e7;
+    color: #101041;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    border: none;
+}
+.btn-secondary:hover{
+    padding: 12px 20px 12px 20px;
+    background:  navy;
+    color: white !important;
+    
+}
+
+.navbar-nav .nav-item a:hover{
+    color: #7f04d1;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-item a{
+    color: #101041;
+    transition: all 0.3s ease-in-out;
+    
+}
+.navbar-nav .nav-item {
+    padding-right: 25px;
+    padding-left: 25px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand{
+    font-weight: 800;
+    font-size: 28px;
+    color: #101041;
+}
+
+.navbar{
+    --bs-navbar-padding-y: 0;
+}
+
+.cashier-navbar{
+    padding: 20px;
+    background: #ffffff;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 50px;
+
+}
+
+.badge img {
+    width: 15px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.badge p {
+    margin: 0;
+}
+
+h1.mt-3.teks-h1{
+    font-size: 62px;
+    font-weight: 800;
+    color: #101041;
+    margin: 0;
+}
+.card-brand{
+    width: 227px;
+    height: 110px;
+    border-radius: 16px;
+    background: #ebf0ec;
+    text-align: center;
+}
+
+.card-brand .logo{
+    height: 50px;
+    margin-top: 30px;
+}
+
+.carousel-wrapper{
+    display: flex;
+    height: 110px;
+    animation: moveSliderToRight 10s linear infinite;
+
+}
+
+.carousel{
+    justify-content: end;
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    overflow: hidden;
+}
+
+@keyframes moveSliderToRight {
+    0% {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+    
+}
+
+@keyframes moveSliderToLeft {
+    0% {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+    
+}
+
+.carousel-wrapper-left{
+    display: flex;
+    height: 110px;
+    animation: moveSliderToLeft 10s linear infinite;
+
+}
+
+.carousel-left{
+    justify-content: end;
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    overflow: hidden;
+}
+
+.text-button{
+    text-decoration: none;
+    color: #7f04d1;
+    font-weight: 500;
+
+}
+
+.text-button:hover{
+    text-decoration: underline;
+    color: #230c5a;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+.primary-copy {
+    font-size: 16px;
+    font-weight: 400;
+    color: #949293;
+    margin: 0px;
+    margin-bottom: 47px;
+}
+
+.features .features-wrapper .big-feature-card{
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    padding-bottom: 60px;
+}
+
+/* Blur */
+.features-wrapper:hover .big-feature-card:not(:hover){
+    filter: blur(3px);
+    transition: all 0.5s ease-in-out;
+}
+
+.features-wrapper:hover .small-feature-card:not(:hover){
+    filter: blur(3px);
+    transition: all 0.5s ease-in-out;
+}
+/* end */
+
+.features .features-wrapper .small-feature-card{
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.features .features-wrapper .small-feature-card .icon{
+    height: 100px;
+   
+}
+
+.features .features-wrapper .icon{
+    float: left;
+    width: 60px;
+    height: 200px;
+    margin-right: 18px;
+}
+
+.features .features-wrapper .icon img{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+.features .features-wrapper h3{
+    padding-top: 16px;
+}
+
+.form-control{
+    border-radius: 50px;
+    background: white;
+    border: none;
+    padding: 12px 20px 12px 12px;
+    margin-bottom: 16px;
+}
+.form-select{
+    border-radius: 50px;
+    background: white;
+    border: none;
+    padding: 12px 20px 12px 12px;
+    margin-bottom: 16px;
+    background-image: url(../chevron-down.svg);
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+}
+
+textarea.form-control{
+    border-radius: 16px;
+    background: white;
+    border: none;
+    padding: 12px 20px 12px 12px;
+    margin-bottom: 16px;
+}
+
+
+
+
+
+
+
